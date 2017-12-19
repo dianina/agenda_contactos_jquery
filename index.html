@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Agenda Contactos</title>
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="formulario">
+			<form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
+				<label for="nombre">Nombre</label>
+					<input name="nombre" type="text" required="required" id="nombre" placeholder="nombre" tabindex="1" title="Nombre">
+						<br>
+				<label for="telefono">Teléfono</label>
+					<input name="telefono" type="text" id="telefono" placeholder="telefono" tabindex="3" title="Telefono">
+						<br>
+					<input type="submit" name="enviar" tabindex="7" value="Agregar"><input type="reset" tabindex="8" value="Borrar">
+					<input type="hidden" name="estado" value="1">
+			</form>
+		</div>
+			</div>
+		</div>
+		
+	</div>
+		
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
